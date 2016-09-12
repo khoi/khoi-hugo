@@ -1,0 +1,18 @@
+nav.pagination-single{
+    padding: 20 0 20 0;
+    overflow: hidden;
+}
+
+nav.pagination-single span.previous{
+    float: left;
+    padding: 10 0 10 0;
+}
+
+nav.pagination-single span.next{
+    float: right;
+    padding: 10 0 10 0;
+}
+
+div.disqus{
+    margin-top: 20px;
+}

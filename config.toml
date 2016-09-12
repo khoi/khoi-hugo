@@ -1,0 +1,31 @@
+baseurl = "https://khoiln.github.io/"
+builddrafts = false
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Khoi Lai"
+title = "Khoi Lai"
+disqusShortname = "khoiln" # Comment out to disable Disqus.
+pluralizelisttitles = false
+
+[permalinks]
+fixed = ":title/"
+blog = "blog/:slug/"
+
+[params]
+Author = "Khoi Lai"
+CacheBuster = true
+DateForm = "Jan 2, 2006"
+DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
+Description = "Can't think of any good bio"
+Email = "khoi.geeky@gmail.com"
+GATracker = "UA-55953295-6"
+GitHub = "//github.com/khoiln"
+HighlightJS = true
+Initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
+Lang = "en"
+LinkedIn = "//linkedin.com/in/khoilai"
+Twitter = "//twitter.com/khoigeeky"
+ExtraCssFiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
