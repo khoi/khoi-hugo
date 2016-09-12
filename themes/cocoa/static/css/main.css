@@ -204,16 +204,13 @@ section.header nav ul {
   display: -ms-inline-flex;
   display: inline-flex;
 }
-section.header nav ul a {
+section.header nav ul li a {
   margin-left: 6px;
   margin-right: 6px;
 }
-section.header nav ul a:first-child {
+section.header nav ul li a:first-child {
   margin-left: 0;
-}
-section.header nav ul a:last-child {
-  margin-right: 0;
-}
+} 
 section.header nav ul li {
   color: #555;
   font-weight: 500;
