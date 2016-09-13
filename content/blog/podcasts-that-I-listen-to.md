@@ -14,7 +14,7 @@ I usually listen to podcasts on the way to work. These are the ones that I'm per
 
 ### Learning And Personal Development Podcasts
 
-* [The Tim Ferris Show](http://fourhourworkweek.com/podcast/) (Who doesn't know Tim Ferris right?)
+* [The Tim Ferriss Show](http://fourhourworkweek.com/podcast/) (Who doesn't know Tim Ferris right?)
 * [Coaching for Leaders](http://coachingforleaders.com/) (The content is great, sound quality is top-notch)
 * [Stuff you should know](http://www.stuffyoushouldknow.com/podcasts)
 
