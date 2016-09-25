@@ -37,11 +37,11 @@ Just like with Apps, finding file and previewing them has never been easier.
 
 ![alfred-finding-files](/images/searching_file1.png)
 
->Yep, Alfred knows that I've been struggling with the new layout on the schedule file lately. You can open the file with `Enter`, or reveal the find with Finder using `Cmd + Enter`.
+>Yep, Alfred knows that I've been struggling with the new schedule layout implementation for [Planday]('https://www.planday.com') lately. You can open the file with `Enter`, or reveal the find with Finder using `Cmd + Enter`.
 
 ![alfred-finding-files](/images/searching_file2.png)
 
->Or just press `->` for the list of available items.
+>Or just press `->` for the list of available actions.
 
 ## 3. Clipboard History and Snippets
 
