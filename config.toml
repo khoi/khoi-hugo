@@ -1,4 +1,4 @@
-baseurl = "https://khoiln.github.io/"
+baseurl = "https://www.khoi.io/"
 builddrafts = false
 canonifyurls = true
 contentdir = "content"
