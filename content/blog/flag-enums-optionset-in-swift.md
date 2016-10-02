@@ -1,8 +1,8 @@
 +++
 date = "2016-10-01T16:58:44+07:00"
 draft = false
-title = "Bitwise Flags Enum in Swift using OptionSet"
-slug = "bitwise-flag-enum-in-swift-optionset"
+title = "#5 - Bitwise Flags Enum in Swift using OptionSet"
+slug = "5-bitwise-flag-enum-in-swift-optionset"
 
 +++
 

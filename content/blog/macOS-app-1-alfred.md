@@ -1,11 +1,11 @@
 +++
 date = "2016-09-25T23:19:31+07:00"
 draft = false
-title = "macOS Apps that I couldn’t live without #1 - Alfred"
-slug = "macOS-Apps-alfred"
+title = "#4 - macOS Apps that I couldn’t live without #1 - Alfred"
+slug = "4-macOS-Apps-alfred"
 +++
 
-In my very first blog post, I've written about ["macOS Setup for iOS Development"](/blog/my-macos-setup-for-ios-development/). I thought some of the tools in there deserve more attention than just a `li` html tag. That's why the series `macOS Apps that I couldn't live without` was born. Today I'll start with my most favorite *how-do-i-survive-without-it* **Alfred**.
+In my very first blog post, I've written about ["macOS Setup for iOS Development"](/blog/1-my-macos-setup-ios-development/). I thought some of the tools in there deserve more attention than just a `li` html tag. That's why the series `macOS Apps that I couldn't live without` was born. Today I'll start with my most favorite *how-do-i-survive-without-it* **Alfred**.
 
 So what is Alfred. I'll steal the tagline from the homepage as a brief super short introduction
 

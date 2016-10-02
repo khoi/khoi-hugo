@@ -1,16 +1,16 @@
 +++
 date = "2016-09-09T09:49:54+07:00"
 draft = false
-title = "my macOS Setup for iOS Development"
-
+title = "#1 - my macOS Setup for iOS Development"
+slug = "1-my-macOS-Setup-iOS-Development"
 +++
 
 I don't normally have to re-install my Mac, but when I do somehow I always forget setting up couple of tools and only find out about it later on.
 
 So I figure I'll document everything here and keep it updated mostly for self references (:
 
-List of apps from Appstore:  
-  
+List of apps from Appstore:
+
 * Slack
 * Evernote
 * Dash 3
@@ -24,9 +24,9 @@ I have a private dotfiles repo that have all my `zsh`, `vim`, `aliases`, `git` c
 
 Here is the copy of the [.osx script](https://gist.github.com/khoiln/28966594298029b10f4342f90de1fa60)
 
-Homebrew and Cask are the tools I use to install all the dependencies as well as the applications that are not available from Appstore  
+Homebrew and Cask are the tools I use to install all the dependencies as well as the applications that are not available from Appstore
 
-* Install `Homebrew`  
+* Install `Homebrew`
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -38,7 +38,7 @@ Homebrew and Cask are the tools I use to install all the dependencies as well as
 brew tap caskroom/cask
 ```
 
-Apps that are installed through Brew Cask  
+Apps that are installed through Brew Cask
 
 * Sketch https://www.sketchapp.com
 * iTerm https://www.iterm2.com

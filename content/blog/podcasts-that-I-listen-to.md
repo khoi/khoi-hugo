@@ -1,8 +1,8 @@
 +++
 date = "2016-09-12T12:57:55Z"
 draft = false
-title = "Podcasts that I listen to"
-
+title = "#3 - Podcasts that I listen to"
+slug = "3-podcasts-that-I-listen-to"
 +++
 
 I usually listen to podcasts on the way to work. These are the ones that I'm personally listen to and enjoy. Hope you guys will like it as well.

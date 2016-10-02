@@ -1,8 +1,8 @@
 +++
 date = "2016-09-10T09:11:26+07:00"
 draft = false
-title = "Common Git Usages"
-
+title = "#2 - Common Git Usages"
+slug = "2-common-git-usages"
 +++
 
 
@@ -37,7 +37,7 @@ git commit -am "Commit message"
 
 ```bash
 git reset --hard HEAD # Reset to the last commit and remove all changes
-git reset HEAD # Undo the last commit, keep changes 
+git reset HEAD # Undo the last commit, keep changes
 
 git reset --hard HEAD~2 # Undo last 2 commits, remove all changes
 git reset HEAD~2 # Undo last 2 commit, keep changes
