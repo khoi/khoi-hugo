@@ -44,3 +44,9 @@ git reset HEAD~2 # Undo last 2 commit, keep changes
 
 ```
 
+### Remove all branches except `master`
+
+```bash
+git branch | grep -v "master" | xargs git branch -D
+```
+
