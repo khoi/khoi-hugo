@@ -5,4 +5,4 @@ title = "about"
 
 +++
 
-An iOS Developer sharing his learning path.
+An iOS Developer who fights with Xcode everyday.

@@ -1,8 +1,8 @@
 +++
 draft = false
-title = "#6 - Custom UIScrollview Paging Size"
+title = "Custom UIScrollview Paging Size"
 date = "2016-11-07T18:33:28+07:00"
-slug = "6-custom-uiscrollview-paging-size"
+slug = "custom-uiscrollview-paging-size"
 +++
 
 A scroll view's paging size is determined by its bound, and there is no way to adjust it. It's difficult to explain why developer wants to change this size. Consider this calendar scenario where I want to show some preview of the next month.

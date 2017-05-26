@@ -1,8 +1,8 @@
 +++
 date = "2016-09-12T12:57:55Z"
 draft = false
-title = "#3 - Podcasts that I listen to"
-slug = "3-podcasts-that-I-listen-to"
+title = "Podcasts that I listen to"
+slug = "podcasts-that-I-listen-to"
 +++
 
 I usually listen to podcasts on the way to work. These are the ones that I'm personally listen to and enjoy. Hope you guys will like it as well.
@@ -14,13 +14,18 @@ I usually listen to podcasts on the way to work. These are the ones that I'm per
 
 ### Learning And Personal Development Podcasts
 
+* [Y Combinator](https://blog.ycombinator.com/category/podcast/) A podcast on starting a startup.
+* [How I Build This](http://www.npr.org/podcasts/510313/how-i-built-this) About entrepreneurs and idealists sharing their journey. 
 * [The Tim Ferriss Show](http://fourhourworkweek.com/podcast/) (Who doesn't know Tim Ferriss right?)
 * [Coaching for Leaders](http://coachingforleaders.com/) (The content is great, sound quality is top-notch)
-* [Stuff you should know](http://www.stuffyoushouldknow.com/podcasts)
 
 ### iOS Development
 
-* [The iPhreaks Show](https://devchat.tv/iphreaks) (This is the only audio podcasts that I found that the content is worth listening to :( suggest me others please)
+* [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) - A 30-minute spin off of [Swift Weekly Brief](https://swiftweekly.github.io/)
+* [Fatal Error](https://fatalerror.fm/) - Great in-depth iOS development podcast
+* [The iPhreaks Show](https://devchat.tv/iphreaks)
 * [Objc.io Talks](https://talk.objc.io/) (Paid video contents, but it's worth every penny)
 
-It took me ~ an hour to drive from home work, so I've been harkening to every podcasts that releases and sometimes I'm out of content to listen to. I'll definitely checkout other recommended podcasts and keep this post updated as I found something useful.
+You can import my latest podcasts in the format of [OPML](/others/overcast.opml) using [Overcast](https://overcast.fm/).
+
+I use it as my daily podcast driver. The `Smart Speed Silence Shortener` feature is super amazing, definitely check it out.. 
