@@ -42,3 +42,43 @@ endif
 Now you can navigate files using fuzzy searching with the speed of light.
 
 <script type="text/javascript" src="https://asciinema.org/a/77OkkZUSLiukEOU3fBwcltpmV.js" id="asciicast-77OkkZUSLiukEOU3fBwcltpmV" async></script>
+
+## Rails Integration with `vim-rails`
+
+[vim-rails](https://github.com/tpope/vim-rails) by the legend `tpope` is the go to plugin for Rails development. It provides functionalites like: syntax highlighting, resources navigation, refactoring, running rake and rails commands.
+
+View a quick demo before digging in
+
+<script type="text/javascript" src="https://asciinema.org/a/RZqNhheHMeTGEhYXDf14eN7YM.js" id="asciicast-RZqNhheHMeTGEhYXDf14eN7YM" async></script>
+
+### Resources Navigation
+
+I mostly use `fuzzy searching` for navigating between files, but `vim-rails` does provide another nice way to work with the resources.
+
+For instance, to open the `Commit` model, you'd do:
+
+```bash
+:Emodel commit
+```
+
+and to open its controller
+
+```bash
+:Econtroller commit
+```
+
+You can also do `mailer`, `spec`, `helper`, `view`, `migration` and some others. It's also context-aware, so if your cursor are at the `Message#show` and you typed `Eview`, it will open `views/messages/open.html.erb`. 
+
+### Rails Commands Integration
+
+Doing `:Server!` will run a Rails server in a new window using `Tmux`. You can also do all of the Rails' commands inside vim, for example:
+
+```bash
+:Rails g model User email password_digest
+```
+
+Rake commands work too
+
+```bash
+:Rake db:create db:migrate
+```
