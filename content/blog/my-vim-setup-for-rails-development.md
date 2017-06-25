@@ -39,6 +39,6 @@ if executable('ag')
 endif
 ```
 
-Now you can navigate file using fuzzy filename searching with the speed of light
+Now you can navigate files using fuzzy searching with the speed of light.
 
-[![asciicast](https://asciinema.org/a/ZWQtjarToJmhrIkWBHCh1XS48.png)](https://asciinema.org/a/ZWQtjarToJmhrIkWBHCh1XS48)
+<script type="text/javascript" src="https://asciinema.org/a/ZWQtjarToJmhrIkWBHCh1XS48.js" id="asciicast-ZWQtjarToJmhrIkWBHCh1XS48" async></script>
