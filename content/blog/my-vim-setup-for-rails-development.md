@@ -41,4 +41,4 @@ endif
 
 Now you can navigate files using fuzzy searching with the speed of light.
 
-<script type="text/javascript" src="https://asciinema.org/a/ZWQtjarToJmhrIkWBHCh1XS48.js" id="asciicast-ZWQtjarToJmhrIkWBHCh1XS48" async></script>
+<script type="text/javascript" src="https://asciinema.org/a/77OkkZUSLiukEOU3fBwcltpmV.js" id="asciicast-77OkkZUSLiukEOU3fBwcltpmV" async></script>
