@@ -3,7 +3,6 @@ date = "2016-10-01T16:58:44+07:00"
 draft = false
 title = "Bitwise Flags Enum in Swift using OptionSet"
 slug = "bitwise-flag-enum-in-swift-optionset"
-
 +++
 
 `Bitwise Flags using Enum` is a technique that is heavily used in the Apple SDK. You can see that Apple tends to use that everywhere from `UIKit` to `Foundation`.
