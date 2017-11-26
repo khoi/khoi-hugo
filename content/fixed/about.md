@@ -5,4 +5,4 @@ title = "about"
 
 +++
 
-An iOS Developer who fights with Xcode everyday.
+Swift by day, Golang by night.
