@@ -1,99 +1,78 @@
 # Cocoa
 
-A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy.
+A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
+
+[__Demo__](http://themes.gohugo.io/theme/cocoa/) / [__Screenshots__](https://github.com/nishanths/cocoa-hugo-theme/blob/master/screenshots.md)
 
 #### Features
 
+```
 * Responsive
 * Suited for blogging and personal webpages
 * Disqus support
-* Built-in support for 404 pages
-* Syntax highlighting
+* Built-in 404 page
+* Syntax highlighting with highlightjs (by @andy4thehuynh)
+* Gravatar/static profile image (by @remeh)
+* RSS feed and icon (by @mvrilo)
+* Optimized SVG icons (by @robinst) for Instagram, 500px, and more.
+* Cache busting
+* Google Analytics
+* Piwik and Gitalk support
+```
 
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
+Most features are optional and can be individually enabled/disabled in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
 
-# Table of Contents
+## Table of Contents
 
-* [Getting Started](#getting-started)
+* [Quick start](#quick-start)
 * [Usage](#usage)
-* [Screenshots](#screenshots)
-* [Changelog](#changelog)
-* [Contributing](#contributing)
+* [Development](#development)
 * [License](#license)
 
-## Getting Started 
+## Quick start 
 
 From the root of your Hugo site, clone the theme into `themes/cocoa` by running:
 
-````
-git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
-````
+```sh
+# Clone theme into the themes/cocoa directory
+$ git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
 
-Then, generate your site's files by running:
+# Generate site files into the public directory
+$ hugo -t cocoa
 
-````
-hugo -t cocoa
-````
+# Or, serve your site and visit localhost:1313 in your browser
+$ hugo -t cocoa --watch serve
+```
 
 ## Usage
 
-#### Creating Content
+#### config.toml
 
-* Posts should generally go under a `content/blog` directory. Typically you would run:
+Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml). Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml` (like in the sample).
+
+#### Creating posts
+
+Posts should generally go under a `content/blog` directory. Typically you would run:
 
 ````
 hugo new blog/your-new-post.md
 ````
+For posts to appear on your site, you may need `draft = false` in the post's front matter or use the `--buildDrafts` option when building.
 
-* Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
+#### Creating fixed pages
+
+Fixed pages such as an About page should preferably go under `content/fixed` or be present at the root of the `content` directory.
 
 ````
-$ hugo new fixed/about.md
+hugo new fixed/about.md
 ````
 
-#### config.toml
+## Development
 
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
+This theme is built and improved upon by open source [contributions](https://github.com/nishanths/cocoa-hugo-theme/graphs/contributors). Pull requests, bug fixes, and new features are welcome! 
 
-#### Example site
-
-An example site is available in `exampleSite/`.
-
-## Screenshots
-
-See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
-
-## Changelog
-
-> v0.3.0
-
-- Change color from orange to blue; improve colors elsewhere
-- Change `div.section` to `section`
-- Rename  `posts` directory to `blog`
-- Add ability to specify extra CSS files in `config.toml`
-- Removed `WebFontsFile` feature from `config.toml`
-- Remove the initials displayed on top right of single post pages
-- Update example site
-
-> v0.2.0
-
-* Added Disqus support. To enable Disqus, add `disqusShortname = "XYZ"` to `config.toml`. More details: <http://gohugo.io/extras/comments/>.
-* In the posts list, replaced date with bullets at smaller screen widths.
-
-> v0.1.0
-
-* Initial release
-
-## Contributing
-
-Pull requests, bug fixes, and new features are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request on GitHub
+If you're contributing CSS changes, please see the README at [`dev/`](dev).
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE) file for more details.

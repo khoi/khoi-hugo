@@ -3,4 +3,8 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ if .Site.Params.Description }}<meta name="description" content="{{ .Site.Params.Description }}">{{ end }}
+<meta name="referrer" content="no-referrer">
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+{{ template "_internal/opengraph.html" . }}
