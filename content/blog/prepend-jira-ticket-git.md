@@ -5,7 +5,7 @@ draft: false
 slug: "prepend-jira-ticket-commit-git-hook"
 ---
 
-## TLDR Installation
+## One Line Installation
 
 ```bash
 HOOKF=.git/hooks/prepare-commit-msg; if [ -d .git/hooks ] &&  [ ! -f $HOOKF ]; then curl -s https://gist.githubusercontent.com/khoiln/e3d2cc8bceefdcd7bda32a337c978e32/raw > $HOOKF && chmod 755 $HOOKF; else echo "Can't install hook"; fi
