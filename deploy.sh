@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
-hugo -t cocoa # if using a theme, replace by `hugo -t <yourtheme>`
+HUGO_ENV=production hugo -t cocoa # if using a theme, replace by `hugo -t <yourtheme>`
 
 # Go To Public folder
 cd public
@@ -19,6 +19,3 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
-
-# Come Back
-cd ..
