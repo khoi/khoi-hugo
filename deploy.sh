@@ -7,6 +7,10 @@ HUGO_ENV=production hugo -t cocoa # if using a theme, replace by `hugo -t <yourt
 
 # Go To Public folder
 cd public
+
+# Go to master
+git checkout master
+
 # Add changes to git.
 git add -A
 
