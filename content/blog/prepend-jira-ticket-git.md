@@ -8,7 +8,7 @@ slug: "prepend-jira-ticket-commit-git-hook"
 ## One Line Installation
 
 ```bash
-HOOKF=.git/hooks/prepare-commit-msg; if [ -d .git/hooks ] &&  [ ! -f $HOOKF ]; then curl -s https://gist.githubusercontent.com/khoiln/e3d2cc8bceefdcd7bda32a337c978e32/raw > $HOOKF && chmod 755 $HOOKF; else echo "Can't install hook"; fi
+HOOKF=.git/hooks/prepare-commit-msg; if [ -d .git/hooks ] &&  [ ! -f $HOOKF ]; then curl -s https://gist.githubusercontent.com/khoiracle/e3d2cc8bceefdcd7bda32a337c978e32/raw > $HOOKF && chmod 755 $HOOKF; else echo "Can't install hook"; fi
 ```
 
 ## Boring Explaination Text
@@ -24,7 +24,7 @@ might end up with the commits being linked to the wrong Jira issue.
 Install the snippet below as your Git `prepare-commit` hook and you'll have the
 ticket id automatically prepend to all your commits.
 
-<script src="https://gist.github.com/khoiln/e3d2cc8bceefdcd7bda32a337c978e32.js"></script>
+<script src="https://gist.github.com/khoiracle/e3d2cc8bceefdcd7bda32a337c978e32.js"></script>
 
 
 
