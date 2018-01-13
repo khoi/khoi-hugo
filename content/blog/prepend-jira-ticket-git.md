@@ -14,7 +14,7 @@ HOOKF=.git/hooks/prepare-commit-msg; if [ -d .git/hooks ] &&  [ ! -f $HOOKF ]; t
 ## Boring Explaination Text
 
 If you're using Jira as your issue tracker, it's probably a good idea to use the
-`Smart Commit` feature to link your Git commits to the tickets.
+`Smart Commit` feature to link the Git commits to the tickets.
 
 ![Remap CapsLock to Ctrl](/images/jira-smart-commit.png)
 
