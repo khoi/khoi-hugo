@@ -19,6 +19,6 @@ From iOS 5 and above, `UIScrollview` instances now have this `panGestureRecogniz
 - put a `UIView` on top of your `UIScrollView`
 - add the scroll view's `panGestureRecognizer` to that view
 
-<script src="https://gist.github.com/khoiln/dc7186fea75c232ac367270a8d768703.js"></script>
+<script src="https://gist.github.com/khoi/dc7186fea75c232ac367270a8d768703.js"></script>
 
 That's it, you're done, how easy is that?

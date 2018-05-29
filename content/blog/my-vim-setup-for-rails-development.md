@@ -124,4 +124,4 @@ Typing the `emmet language` and then `CTRL + Y + ,` will translate it to the HTM
 
 ## Final words
 
-This is not the entire configurations/plugins that I use for Vim. My complete dotfiles can be found on my [Github repo](https://github.com/khoiln/dotfiles). I hope you found this article useful and go Vim-on.
+This is not the entire configurations/plugins that I use for Vim. My complete dotfiles can be found on my [Github repo](https://github.com/khoi/dotfiles). I hope you found this article useful and go Vim-on.
