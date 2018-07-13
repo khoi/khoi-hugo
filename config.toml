@@ -66,4 +66,4 @@ gitalk_owner           = "the owner of this repo"
 gitalk_admin           = ['a', 'list', 'of', 'administrator']
 
 # avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-gravatar             = "f70de1c8f68380f8ccb3ad45161aaf4b"                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
+gravatar             = "d7fa7d4e2c83eeb4be2ecfbdd9c4d6e7"                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
