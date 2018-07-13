@@ -46,7 +46,7 @@ lang                   = "en"
 # linkedin               = "//linkedin.com/in/you"
 noshowreadtime         = true                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
-twitter                = "//twitter.com/khoigeeky"
+twitter                = "//twitter.com/khoiracle"
 # mastodon               = "//example.com/@you"
 
 highlightjs            = true
