@@ -14,7 +14,7 @@ In this blog post, I am going to share my Rails development workflow, the plugin
 
 I find the `Capslock` key useless, and the `Control` key is kind of hard to reach. So I remap my Caplocks to Control, home row key FTW!
 
-![Remap CapsLock to Ctrl](images/caplocks_to_control_key_remapping.png)
+![Remap CapsLock to Ctrl](/images/caplocks_to_control_key_remapping.png)
 
 One extra side effects, you can't even be ANGRY with anyone anymore. Less anger, less carpal tunnel syndrome.
 
