@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/khoiracle
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://khoi.io
+  * I am khoiracle (https://keybase.io/khoiracle) on keybase.
+  * I have a public key ASDwnHrX9FauTJossi1wmCmrSSqcAqpuyT5A4qRomaf_rwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f09c7ad7f456ae4c9a2cb22d709829ab492a9c02aa6ec93e40e2a46899a7ffaf0a",
+      "host": "keybase.io",
+      "kid": "0120f09c7ad7f456ae4c9a2cb22d709829ab492a9c02aa6ec93e40e2a46899a7ffaf0a",
+      "uid": "a0fe87cd80c842a6c5130c3ad7b66a19",
+      "username": "khoiracle"
+    },
+    "merkle_root": {
+      "ctime": 1531454221,
+      "hash": "b766f34f2e0ab47bd1f9ba3e8086dbc23d9c9b5256ffe37daa9784e2e4c5805d296a71b7b0059475ddd85352de1617e7144069c3b684d9225eb4d78ad60df4fa",
+      "hash_meta": "84016a3f7c14e7a4db3379c4c12197a22ae9f5b88798268e248aa3780a96acd0",
+      "seqno": 3258281
+    },
+    "service": {
+      "entropy": "JRK2OL8orJHFoLaMWOY5Ayqo",
+      "hostname": "khoi.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1531454248,
+  "expire_in": 504576000,
+  "prev": "9cf1391c873816b3f64b592cf7d1e6292c412a7f4216994c3b89f03fb5bc90e5",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8Jx61/RWrkyaLLItcJgpq0kqnAKqbsk+QOKkaJmn/68Kp3BheWxvYWTESpcCB8QgnPE5HIc4FrP2S1ks99HmKSxBKn9CFplMO4nwP7W8kOXEIDuFv+x+Mn8jR7Yv5WM24bnbUjr4klaJ/LFrtg5ds31+AgHCo3NpZ8RAmKbKrZDcpWiC8SxBXw2V/YqqxTJk0aLLkolVegGa61L6BSI1Dog1MzLdEcKtLjl+HDXWtPrDcIcuMxhwj813DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEII7KieoWuaTJiS2DRmTG7Z9JgmSwyKCQA9nKhe2+zeVKo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/khoiracle
+
+==================================================================
