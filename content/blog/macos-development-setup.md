@@ -50,7 +50,7 @@ chsh -s /usr/local/bin/fish
 
 ## Restoring the dotfiles
 
-Now that I have `fish` in order, time to restore my beloved [dotfiles](https://github.com/khoi/dotfile). My dotfiles mostly contains my [Neovim](https://neovim.io), Tmux, some Fish's custom functions.
+Now that I have `fish` in order, time to restore my beloved [dotfiles](https://github.com/khoi/dotfiles). My dotfiles mostly contains my [Neovim](https://neovim.io), Tmux, some Fish's custom functions.
 
 I use the bare repo Git technique to manage my dotfiles. The method is described in detail on Atlassian's [blog](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
