@@ -136,6 +136,7 @@ xcversion install 9.4.1
 
 - I use [Dracula](http://draculatheme.com) as the color scheme for most of my editor.
 
+
 ## Conclusion
-  
-Those above are the softwares and packages that I use on my macOS. I'll probably go in to detail on how I use my shell with `fish` + `tmux` + `neovim` in another blog post. Stay tuned 🙇‍♂️.
+
+Overall, I'm really happy with the setup above. One thing I need to figure out is how to make use of this fancy-yet-useless TouchBar. Also I'll probably go in to detail on how I use my shell with `fish` + `tmux` + `neovim` in another blog post. Stay tuned 🙇‍♂️.
