@@ -1,5 +1,5 @@
 ---
-title: "My macOS development setup"
+title: "My  macOS development setup"
 date: 2018-07-15T13:46:34+07:00
 draft: false
 ---
