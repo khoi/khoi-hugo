@@ -19,7 +19,7 @@ draft: false
 
 ## Introduction
 
-I've recently acquired the new 15 inch Macbook Pro. Despite the UselessBar, I've been in love with this new machine mainly because it's light and thin and black. And also coming from a mechanical keyboard "background", I actually really like the feely of the new Butterfly keyboard. 
+I've recently acquired the new 15 inch Macbook Pro. Despite the UselessBar, I've been in love with it mainly because it's light and thin and black. And also coming from a mechanical keyboard "background", I actually really like the feely of the new Butterfly keyboard. 
 
 However, this post is not going to be about how I love my new machine, but rather how I set it up for iOS and Golang development. Many people have asked me about my setup, especially on the terminal-thingy they called it. Thus, I'll try  to document everything in this post, and also try to keep it always up-to-date.
 
@@ -36,7 +36,7 @@ The very first thing I do is to install [Homebrew](https://brew.sh)
 
 ## Fish shell 🐡
 
-My setup is going to be heavily relies on the shell, so let's that Terminal ready.
+My setup is going to be heavily relies on the shell, so let's get Terminal ready.
 
 I've switched from `zsh` to `fish` shell for almost 2 years. And I feel like that `fish` although not as powerful as `zsh`, but it provides me with enough functionalities out of the box, and it requires very minimal configurations. 
 
