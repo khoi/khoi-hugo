@@ -70,6 +70,11 @@ config checkout
 ## Install brew's packages 🍺
 
 ```bash
+brew install aria2
+brew install mas
+brew install the_platinum_searcher
+brew install tldr
+brew install youtube-dl
 brew install neovim
 brew install git 
 brew install openssl
@@ -113,6 +118,7 @@ brew cask install adguard # Kernel level ad blocker
 brew cask install jetbrains-toolbox # For Goland
 brew cask install telegram 
 brew cask install docker
+brew cask install simsim
 brew cask install slack
 brew cask install skype
 brew cask install spotify
@@ -121,6 +127,7 @@ brew cask install 1password
 brew cask install moom # window management hotkeys
 brew cask install caskroom/fonts/font-hack 
 brew cask install font-fira-code # My main coding font with ligatures
+brew cask install vlc
 ```
 
 ## Xcode
