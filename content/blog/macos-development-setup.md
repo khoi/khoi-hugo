@@ -6,7 +6,6 @@ draft: false
 
 - [Introduction](#introduction)
 - [Homebrew](#homebrew)
-- [Iterm2](#install-iterm2)
 - [fish shell 🐡](#fish-shell-🐡)
 - [dotfiles](#restoring-the-dotfiles)
 - [Some `macOS` tweak](#some-macos-tweak)
@@ -29,10 +28,6 @@ The very first thing I do is to install [Homebrew](https://brew.sh)
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
-## Install Iterm2
-
-[Iterm2](https://iterm2.com) is my shell emulator of choice.
 
 ## Fish shell 🐡
 
@@ -122,7 +117,7 @@ brew cask install simsim
 brew cask install slack
 brew cask install skype
 brew cask install spotify
-brew cask install tunnelbear
+brew cask install private-internet-access
 brew cask install 1password
 brew cask install moom # window management hotkeys
 brew cask install caskroom/fonts/font-hack 
