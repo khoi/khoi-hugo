@@ -67,14 +67,13 @@ config checkout
 ```bash
 brew install aria2
 brew install mas
-brew install the_platinum_searcher
 brew install tldr
 brew install youtube-dl
 brew install neovim
 brew install git 
 brew install openssl
 brew install reattach-to-user-namespace # Use for tmux
-brew install pt # A better ag
+brew install ripgrep
 brew install tmux
 brew install hub 
 brew install go
