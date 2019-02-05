@@ -1,53 +1,59 @@
-baseurl = "https://www.khoi.io/"
-builddrafts = false
-canonifyurls = true
-contentdir = "content"
-languageCode = "en-US"
-layoutdir = "layouts"
-publishdir = "public"
+baseurl             = "https://you.github.io/"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "en-US"
+layoutdir           = "layouts"
+publishdir          = "public"
 theme               = "cocoa"
-author = "Khoi"
-title = "Khoi"
+author              = "Arthur Dent"
+title               = "Arthur Dent"
 pygmentsuseclasses  = true
-disqusshortname     = "khoiln" 
+disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
-googleAnalytics     = "UA-55953295-6"
+googleAnalytics     = "UA-123-45"
 
 [permalinks]
-blog = "post/:slug/"
+blog  = "blog/:slug/"
 
 [[menu.main]]
-name                   = "Posts"
+name                   = "Blog"
 weight                 = -120
-identifier             = "post"
-url                    = "/"
+identifier             = "blog"
+url                    = "/blog/"
 
 [[menu.main]]
 name                   = "About"
 weight                 = -110
 identifier             = "about"
-url                    = "/fixed/about/"
+url                    = "/about/"
+
+[[menu.main]]
+name                   = "Code"
+weight                 = -100
+identifier             = "code"
+url                    = "/code/"
 
 [params]
 latestpostscount       = 5                             # how many posts to display on the home page
 i18n_flags             = false                         # whether to display small country flags for available translations
-author                 = "Khoi"
+author                 = "Arthur Dent"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
 dateform               = "Jan 2, 2006"
 dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
-description            = ""
-email                  = "k@khoi.io"
+description            = "Don't panic"
+email                  = "you@example.space"
 extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
 faviconfile            = "img/leaf.ico"
-github                 = "//github.com/khoi"
-# instagram              = "//instagram.com/you"
-# px500                  = "//500px.com/username"
+github                 = "//github.com/you"
+instagram              = "//instagram.com/you"
+px500                  = "//500px.com/username"
 lang                   = "en"
-# linkedin               = "//linkedin.com/in/you"
-noshowreadtime         = true                         # if true, don't show "<x> minutes read" in posts
+linkedin               = "//linkedin.com/in/you"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
 selfintro              = ""                            # appears in the site header when set to a non-empty string
-twitter                = "//twitter.com/khoiracle"
-# mastodon               = "//example.com/@you"
+twitter                = "//twitter.com/you"
+mastodon               = "//example.com/@you"
 
 highlightjs            = true
 # highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
@@ -65,5 +71,9 @@ gitalk_repo            = "your repo url"
 gitalk_owner           = "the owner of this repo"
 gitalk_admin           = ['a', 'list', 'of', 'administrator']
 
-# avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-gravatar             = "d7fa7d4e2c83eeb4be2ecfbdd9c4d6e7"                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
+avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+# gravatar             = ""                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
+
+# The following are DEPRECATED.
+gatracker              = "XYZ" # use googleAnalytics instead
+initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
