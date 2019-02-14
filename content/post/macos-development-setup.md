@@ -100,7 +100,7 @@ rbenv global 2.5.1
 
 The ability to installing, maintaining, and removing apps using `brew cask` makes I feel like a super hero. This is my preferred way of installing software. 
 
-```
+```bash
 brew cask install visual-studio-code
 brew cask install gpg-suite
 brew cask install google-chrome

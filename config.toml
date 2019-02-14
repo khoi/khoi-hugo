@@ -4,6 +4,10 @@ title = "khoi.io"
 theme = "kondo"
 DefaultContentLanguage = "en"
 
+pygmentsStyle = "dracula"
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
 [author]
   name = "khoi"
   homepage = "https://khoi.io/"
