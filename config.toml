@@ -4,9 +4,9 @@ title = "khoi.io"
 theme = "kondo"
 DefaultContentLanguage = "en"
 
-pygmentsStyle = "dracula"
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
+# pygmentsStyle = "dracula"
+# pygmentsCodeFences = true
+# pygmentsCodefencesGuessSyntax = true
 
 [author]
   name = "khoi"

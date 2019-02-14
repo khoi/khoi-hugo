@@ -10,6 +10,10 @@
     {{- end -}}
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
     <link href="{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     {{- if .IsHome -}}
     <title>{{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Site.Title }}" />
