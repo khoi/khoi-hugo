@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="main">
+    <h1>Khoi Lai</h1>
+    <p>An engineer who's into Swift and Go.</p>
+    <ul>
+        <li><a href="https://github.com/khoi">GitHub</a></li>
+        <li><a href="https://twitter.com/khoiracle">Twitter</a></li>
+    </ul>
+    <h2>Posts</h2>
+    <ul>
+    {{ range (where .Pages "Section" "post")}}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </li>
+    {{ end }}
+    </ul>
+</div>
+{{ end }}
