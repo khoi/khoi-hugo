@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="main">
+    <h1>khoi.io</h1>
+    <p>Backend developer at <a href="https://monzo.com/">Monzo</a>, co-founder of and chef at
+        <a href="http://bergamotandblack.com/">Bergamot and Black</a>, Computer Business Review <a
+            href="http://www.cbronline.com/news/cloud/top-30-under-30-in-cloud/#http://www.cbronline.com/news/cloud/top-30-under-30-in-cloud/#2">30
+            under 30 in
+            Cloud</a>,
+        ex-cloud systems developer at <a href="https://www.cloudreach.com/">Cloudreach</a>, alumnus
+        of the <a href="https://www.recurse.com/">Recurse Center</a> and the University of Oxford.</p>
+
+    <ul>
+        <li><a href="https://github.com/jamesroutley">GitHub</a></li>
+        <li><a href="https://uk.linkedin.com/pub/james-routley/a8/28b/ab9">LinkedIn</a></li>
+        <li><a href="https://twitter.com/james_routley">Twitter</a></li>
+        <li><a href="assets/pdf/james-routley-cv-2017-03-22.pdf">Curriculum Vitae</a> (pdf)</li>
+    </ul>
+
+    <h2 id="blog">Blog</h2>
+
+    <p><a href="/blog.html">All posts</a></p>
+    <ul>
+
+    </ul>
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </li>
+    {{ end }}
+    <h2 id="projects">Projects</h2>
+    <ul>
+        <li><a href="https://github.com/cloudreach/sceptre">Sceptre</a>, a tool for launching and managing
+            CloudFormation stacks</li>
+        <li><a href="https://slingshot.jamesroutley.co.uk/">Slingshot</a>, an interplanetary physics game.</li>
+        <li><a href="https://github.com/cloudreach/ptolemy">Ptolemy</a>, a tool for writing terse AWS DMS Mapping Tables
+        </li>
+        <li><a href="https://github.com/jamesroutley/dev">Dev</a>, a cli tool for initialising development environments
+        </li>
+        <li><a href="awscm.html">AWSCM</a>, an AWS Credentials Manager</li>
+        <li><a href="flower.html">A Flower Classification Android Application</a></li>
+    </ul>
+</div>
+{{ end }}
