@@ -22,7 +22,7 @@
     <ul>
 
     </ul>
-    {{ range .Pages.ByPublishDate.Reverse }}
+    {{ range first 5 (where .Pages "Section" "post")}}
     <li>
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </li>
