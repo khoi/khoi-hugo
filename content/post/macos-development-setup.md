@@ -105,6 +105,7 @@ mas lucky 1Password
 mas lucky spark
 mas lucky moom
 mas lucky telegram
+mas lucky todoist
 ```
 
 ## Install applications using `brew cask`
