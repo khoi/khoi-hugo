@@ -79,7 +79,6 @@ brew install tmux
 brew install hub 
 brew install go
 brew install jq
-brew install rbenv
 brew install node
 brew install khoi/tap/compass
 brew install fzf && /usr/local/opt/fzf/install
