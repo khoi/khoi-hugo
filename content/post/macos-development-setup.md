@@ -102,6 +102,9 @@ rbenv global 2.5.1
 ```bash
 mas lucky xcode
 mas lucky 1Password
+mas lucky spark
+mas lucky moom
+mas lucky telegram
 ```
 
 ## Install applications using `brew cask`
@@ -118,13 +121,11 @@ brew cask install alfred
 brew cask install charles # debug http requests never been easier
 brew cask install adguard # Kernel level ad blocker
 brew cask install jetbrains-toolbox # For Goland
-brew cask install telegram 
 brew cask install docker
 brew cask install simsim
 brew cask install slack
 brew cask install skype
 brew cask install private-internet-access
-brew cask install moom # window management hotkeys
 brew cask install caskroom/fonts/font-hack 
 brew cask install font-fira-code # My main coding font with ligatures
 brew cask install vlc
