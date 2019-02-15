@@ -97,6 +97,13 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 ```
 
+## Install AppStore application with `mas`
+
+```bash
+mas lucky xcode
+mas lucky 1Password
+```
+
 ## Install applications using `brew cask`
 
 The ability to installing, maintaining, and removing apps using `brew cask` makes I feel like a super hero. This is my preferred way of installing software. 
@@ -116,22 +123,11 @@ brew cask install docker
 brew cask install simsim
 brew cask install slack
 brew cask install skype
-brew cask install spotify
 brew cask install private-internet-access
-brew cask install 1password
 brew cask install moom # window management hotkeys
 brew cask install caskroom/fonts/font-hack 
 brew cask install font-fira-code # My main coding font with ligatures
 brew cask install vlc
-```
-
-## Xcode
-
-I use [xcode-install](https://github.com/KrauseFx/xcode-install) to maintain my Xcode.
-
-```
-gem install xcode-install
-xcversion install 9.4.1
 ```
 
 ## Miscs
