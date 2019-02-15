@@ -81,8 +81,9 @@ brew install go
 brew install jq
 brew install rbenv
 brew install node
-brew install khoi/tap/sextant
+brew install khoi/tap/compass
 brew install fzf && /usr/local/opt/fzf/install
+brew install htop
 ```
 
 I won't go in to detail on how I use my shell with `tmux` and `pt` since I think that's going to be lengthy and deserve its own blog post. 
