@@ -41,6 +41,7 @@ I've switched from `zsh` to `fish` shell for almost 2 years. And I feel like tha
 brew install fish
 sudo echo /usr/local/bin/fish >> /etc/shells
 chsh -s /usr/local/bin/fish
+fisher 
 ```
 
 ## Restoring the dotfiles
