@@ -29,6 +29,10 @@ code,pre {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
+code {
+    background: #F0F0F0;
+}
+
 pre {
     padding: 1.2em
 }
