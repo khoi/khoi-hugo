@@ -5,10 +5,10 @@ draft = false
 categories = ["Daily Coding Problem"]
 +++
 
-From today I'll try to solve a programming problem everyday using Golang and push it to https://github.com/khoi/daily-coding-problem-in-go/
+From today I'll try to solve a programming problem every single day using Golang and push it up to https://github.com/khoi/daily-coding-problem-in-go/
 These programing problems are tailored, curated by [Daily Coding Problem](https://www.dailycodingproblem.com/). I highly recommend that you subscribe to them to exercise your brain everyday.
 
-The first problem I'm solving today is `Two Sum`, which is a trivial one.
+The first problem I'm solving today is `Two Sum`, which should be a trivial one.
 
 ## Problem
 
@@ -20,7 +20,7 @@ Bonus: Can you do this in one pass?
 
 ## Solution
 
-This can be solved in just 1 pass, by storing all the number that we've passed through in a `map[int]struct{}`. And for each element, we check whether the `map[k - currentNumber]` exist. If it exists, we find a match!
+This can be solved in just 1 pass, by storing all the number that we've passed through in a `map[int]struct{}`. And for each element, we check whether the `map[k - currentNumber]` exist. If it exists, then we find a match!
 
 **1_two_sum.go**
 ```go
