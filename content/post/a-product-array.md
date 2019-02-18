@@ -21,7 +21,7 @@ Follow-up: what if you can't use division?
 - Calculate the product of all elements using 1 pass.
 - Construct the new array by iterating through the input array again with `new_array[i] = product_in_step1 / array[i]`
 
-## Test case
+## Tests
 
 ```
 package daily_coding_problem_in_go
