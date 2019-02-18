@@ -14,12 +14,14 @@ the one at i.
 For example, if our input was [1, 2, 3, 4, 5], the expected output would be
 [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be
 [2, 3, 6].
-Follow-up: what if you can't use division?
+
+**Follow-up: what if you can't use division?**
 
 ## Thoughts
 
 - Calculate the product of all elements using 1 pass.
 - Construct the new array by iterating through the input array again with `new_array[i] = product_in_step1 / array[i]`
+- This only work under the assumption that there is no 0 in the array 🤷‍♂️.
 
 ## Tests
 
@@ -67,3 +69,7 @@ func ProductArray(arr []int) []int {
 ```
 
 Time Complexity: **O(n)**
+
+## Follow up
+
+I couldn't think of a solution for the follow up yet. Will give it some thoughts and come back later.
