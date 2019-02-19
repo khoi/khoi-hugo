@@ -74,10 +74,10 @@ Time Complexity: **O(n)**
 
 Without division, the idea is:
 
-- arr = [1, 2, 3, 4, 5]
-- left = [1, 1*1, 1*1*2, 1*2*3, 1*2*3*4, 1*2*3*4*5] = [1, 1, 2, 6, 24]
-- right = [5*4*3*2*1, 5*4*3*2, 5*4*3, 5*4, 1] = [120, 60, 20, 5, 1]
-- result = [120, 60, 40, 30, 24] where result[i] = left[i] * right[i]
+- Input: `arr = [1, 2, 3, 4, 5]`
+- Calculate `left = [1, 1*1, 1*1*2, 1*2*3, 1*2*3*4, 1*2*3*4*5]` = `[1, 1, 2, 6, 24]`
+- Calculate `right = [5*4*3*2*1, 5*4*3*2, 5*4*3, 5*4, 1]` = `[120, 60, 20, 5, 1]`
+- `result = [120, 60, 40, 30, 24]` where `result[i] = left[i] * right[i]`
 
 ```go
 func ProductArray2(arr []int) []int {
