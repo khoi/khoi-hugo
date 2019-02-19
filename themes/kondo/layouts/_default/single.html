@@ -5,4 +5,10 @@
     <p class="header-date">{{ .PublishDate.Format "January 2, 2006" }}</p>
 </header>
 {{ .Content }}
+<footer>
+    <hr>
+    <ul>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+    </ul>
+</footer>
 {{- end -}}
