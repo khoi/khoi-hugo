@@ -107,4 +107,4 @@ func ProductArray2(arr []int) []int {
 }
 ```
 
-Time Complexity: Despite the solution is a bit more complicated, it's still **O(n)**.
+Time Complexity: **O(n)** despite the solution looks a tad more complicated.
