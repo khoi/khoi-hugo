@@ -25,7 +25,7 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be
 
 ## Tests
 
-```
+```go
 package daily_coding_problem_in_go
 
 import "testing"
@@ -49,7 +49,7 @@ func TestProductArray(t *testing.T) {
 
 ## Implementation
 
-```
+```go
 package daily_coding_problem_in_go
 
 func ProductArray(arr []int) []int {
@@ -72,4 +72,39 @@ Time Complexity: **O(n)**
 
 ## Follow up
 
-I couldn't think of a solution for the follow up yet. Will give it some thoughts and come back later.
+Without division, the idea is:
+
+- arr = [1, 2, 3, 4, 5]
+- left = [1, 1*1, 1*1*2, 1*2*3, 1*2*3*4, 1*2*3*4*5] = [1, 1, 2, 6, 24]
+- right = [5*4*3*2*1, 5*4*3*2, 5*4*3, 5*4, 1] = [120, 60, 20, 5, 1]
+- result = [120, 60, 40, 30, 24] where result[i] = left[i] * right[i]
+
+```go
+func ProductArray2(arr []int) []int {
+	size := len(arr)
+	left := make([]int, size)
+	right := make([]int, size)
+	result := make([]int, size)
+
+	for i := 0; i < size; i++ {
+		left[i] = 1
+		right[i] = 1
+	}
+
+	for i := 1; i < size; i++ {
+		left[i] = arr[i-1] * left[i-1]
+	}
+
+	for i := size - 2; i >= 0; i-- {
+		right[i] = arr[i+1] * right[i+1]
+	}
+
+	for i := 0; i < size; i++ {
+		result[i] = left[i] * right[i]
+	}
+
+	return result
+}
+```
+
+Time Complexity: Despite the solution is a bit more complicated, it's still **O(n)**.
