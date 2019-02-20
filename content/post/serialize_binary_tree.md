@@ -1,7 +1,7 @@
 +++
 title = "Daily Coding Problem #3 - Serialize binary tree"
 date = "2019-02-20T20:47:31+07:00"
-draft = true
+draft = false
 categories = ["Daily Coding Problem"]
 +++
 
