@@ -77,6 +77,7 @@ brew install reattach-to-user-namespace # Use for tmux
 brew install ripgrep
 brew install tmux
 brew install hub 
+brew install fd
 brew install go
 brew install jq
 brew install node
