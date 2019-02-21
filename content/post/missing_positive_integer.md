@@ -28,7 +28,7 @@ The problem states that **You can modify the input array in-place.**, this has t
 
 ## Test cases
 
-[4_missing_positive_integer.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/4_missing_positive_integer.go)
+[4_missing_positive_integer_test.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/4_missing_positive_integer_test.go)
 
 ```go
 {{< readfileraw file="/content/daily-coding-problem-in-go/4_missing_positive_integer_test.go" >}}
