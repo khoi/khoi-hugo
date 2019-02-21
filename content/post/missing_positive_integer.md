@@ -31,31 +31,7 @@ The problem states that **You can modify the input array in-place.**, this has t
 [4_missing_positive_integer.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/4_missing_positive_integer.go)
 
 ```go
-package daily_coding_problem_in_go
-
-import "testing"
-
-var missingPositiveIntTests = []struct {
-	in  []int
-	out int
-}{
-	{[]int{3, 4, -1, 1}, 2},
-	{[]int{1, 2, 0}, 3},
-	{[]int{1, 2, 3}, 4},
-	{[]int{3, 2, 1}, 4},
-	{[]int{-1, 4, 2, 3, 1}, 5},
-  {[]int{3, 2, 4, -1, 1}, 5},
-}
-
-func TestMissingPositiveInt(t *testing.T) {
-	for _, tc := range missingPositiveIntTests {
-		dup := make([]int, len(tc.in)) // dupe it since we modify the input in-place
-		copy(dup, tc.in)
-		if actual := MissingPositiveInt(tc.in); actual != tc.out {
-			t.Errorf("%v, expecting %v, got %v", dup, tc.out, actual)
-		}
-	}
-}
+{{< readfileraw file="/content/daily-coding-problem-in-go/4_missing_positive_integer_test.go" >}}
 ```
 
 ## Solution
@@ -63,23 +39,5 @@ func TestMissingPositiveInt(t *testing.T) {
 [4_missing_positive_integer.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/4_missing_positive_integer.go)
 
 ```go
-package daily_coding_problem_in_go
-
-func MissingPositiveInt(arr []int) int {
-	for i := 0; i < len(arr); {
-		if arr[i] < 1 || arr[i] >= len(arr) || arr[i] == i+1 {
-			i++
-			continue
-		}
-		arr[arr[i]-1], arr[i] = arr[i], arr[arr[i]-1]
-	}
-
-	for i := range arr {
-		if arr[i] != i+1 {
-			return i + 1
-		}
-	}
-
-	return len(arr) + 1
-}
+{{< readfileraw file="/content/daily-coding-problem-in-go/4_missing_positive_integer.go" >}}
 ```
