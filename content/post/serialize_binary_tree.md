@@ -29,7 +29,7 @@ assert deserialize(serialize(node)).left.left.val == 'left.left'
 
 ## Solution
 
-One could find a way to serialize it to a string, but the problem doesn't forbid the use of standard lib so I'm going to be lazy and use built in Go's JSON marshaler here and call it a day 😆.
+One could find a way to serialize a binary tree to a string, but the question doesn't forbid the use of standard lib so I'm going to be lazy and use built in Go's JSON marshaler here and call it a day 😆.
 
 `3_serialize_binary_tree.go`
 ```go
