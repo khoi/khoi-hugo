@@ -1,0 +1,3 @@
+[submodule "content/daily-coding-problem-in-go"]
+	path = content/daily-coding-problem-in-go
+	url = git@github.com:khoi/daily-coding-problem-in-go.git
