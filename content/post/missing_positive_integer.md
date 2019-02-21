@@ -18,6 +18,7 @@ You can modify the input array in-place.
 ## Thoughts
 
 The first solution that comes to mind is:
+
 - Build a dictionary of all positive integers value of the array. This is done in O(n)
 - From that dictionary, get the first missing positive integer. That's our result.
 
@@ -43,6 +44,7 @@ var missingPositiveIntTests = []struct {
 	{[]int{1, 2, 3}, 4},
 	{[]int{3, 2, 1}, 4},
 	{[]int{-1, 4, 2, 3, 1}, 5},
+  {[]int{3, 2, 4, -1, 1}, 5},
 }
 
 func TestMissingPositiveInt(t *testing.T) {
@@ -64,11 +66,12 @@ func TestMissingPositiveInt(t *testing.T) {
 package daily_coding_problem_in_go
 
 func MissingPositiveInt(arr []int) int {
-	for i, e := range arr {
-		if e <= 0 || e >= len(arr) {
+	for i := 0; i < len(arr); {
+		if arr[i] < 1 || arr[i] >= len(arr) || arr[i] == i+1 {
+			i++
 			continue
 		}
-		arr[e-1], arr[i] = arr[i], arr[e-1]
+		arr[arr[i]-1], arr[i] = arr[i], arr[arr[i]-1]
 	}
 
 	for i := range arr {
