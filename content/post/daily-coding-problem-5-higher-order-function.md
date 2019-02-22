@@ -24,7 +24,7 @@ Implement `car` and `cdr`.
 
 ## Solution
 
-This one is relatively easy, as long as you're familiar with the idea of higher order function. 
+If you're familiar with the concept of [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function), this one should be relatively easy.
 
 [5_higher_order_function.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/5_higher_order_function.go)
 
