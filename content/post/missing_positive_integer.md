@@ -26,6 +26,14 @@ However, this doesn't work since the algorithm has to be done using a `constant 
 
 The problem states that **You can modify the input array in-place.**, this has to be a clue.
 
+So here is the new plan:
+
+- the `result` must be between 1 and `len(arr) + 1`, we can ignore all other values.
+- we'll use the array's indices to keep track of all the positive numbers
+- iterate through each index of the array, and swap `arr[i]` with `arr[arr[i] + 1]`, and keep swapping until we found a valid value for the index `i`.
+- after the operation, we'll end up with an array where all positive numbers are grouped at the beginning of the array.
+- we then iterate again and find the first number that doesn't belong, that's our value.
+
 ## Test cases
 
 [4_missing_positive_integer_test.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/4_missing_positive_integer_test.go)
