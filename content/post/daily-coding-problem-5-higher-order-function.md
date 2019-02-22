@@ -21,3 +21,23 @@ def cons(a, b):
 ```
 
 Implement `car` and `cdr`.
+
+## Solution
+
+This one is relatively easy, as long as you're familiar with the idea of higher order function. 
+
+[5_higher_order_function.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/5_higher_order_function.go)
+
+```go
+{{< readfileraw file="/content/daily-coding-problem-in-go/5_higher_order_function.go" >}}
+```
+
+## Test case
+
+[5_higher_order_function_test.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/5_higher_order_function_test.go)
+
+```go
+{{< readfileraw file="/content/daily-coding-problem-in-go/5_higher_order_function_test.go" >}}
+```
+
+
