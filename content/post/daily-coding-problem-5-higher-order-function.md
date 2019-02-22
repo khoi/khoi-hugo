@@ -1,7 +1,7 @@
 +++
 title = "Daily Coding Problem #5 - Higher Order Function"
 date = "2019-02-22T20:08:19+07:00"
-draft = true
+draft = false
 categories = ["Daily Coding Problem"]
 +++
 
