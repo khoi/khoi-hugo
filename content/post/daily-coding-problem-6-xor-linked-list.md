@@ -13,6 +13,10 @@ An XOR linked list is a more memory efficient doubly linked list. Instead of eac
 
 If using a language that has no pointers (such as Python), you can assume you have access to get_pointer and dereference_pointer functions that converts between nodes and memory addresses.
 
+## Thoughts
+
+In order to work with memory addresses directly in Go, I'll have to use the `unsafe` package, which is usually a big NO NO in a production app. But I guess solving whiteboard problem can be counted as an exception 😂.
+
 ## Solution
 
 [6_xor_linked_list.go](https://github.com/khoi/daily-coding-problem-in-go/blob/master/6_xor_linked_list.go)
