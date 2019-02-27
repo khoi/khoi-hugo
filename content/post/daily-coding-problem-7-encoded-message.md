@@ -1,7 +1,7 @@
 +++
 title = "Daily Coding Problem #7 - Encoded Message"
 date = "2019-02-27T16:35:12+07:00"
-draft = true
+draft = false
 categories = ["Daily Coding Problem"]
 +++
 
