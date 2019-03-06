@@ -1,7 +1,7 @@
 baseURL = "https://khoi.io/"
 languageCode = "en-us"
 title = "khoi.io"
-theme = "kondo"
+theme = "khoi"
 DefaultContentLanguage = "en"
 
 # pygmentsStyle = "dracula"
