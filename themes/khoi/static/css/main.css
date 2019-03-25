@@ -2,7 +2,9 @@ body {
     font-size: 85%;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     line-height: 1.7;
-    text-align: justify
+    text-align: justify;
+    background-color: #fafafa;
+    color: #222;
 }
 
 .main {
@@ -47,8 +49,8 @@ a:visited {
 }
 
 a:hover {
-    color: #fff;
-    background-color: #000;
+    color: #fafafa;
+    background-color: #222;
     text-decoration: none
 }
 
