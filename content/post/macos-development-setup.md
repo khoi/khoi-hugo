@@ -72,6 +72,7 @@ brew install tldr
 brew install youtube-dl
 brew install neovim
 brew install git 
+brew install diff-so-fancy
 brew install openssl
 brew install reattach-to-user-namespace # Use for tmux
 brew install ripgrep
