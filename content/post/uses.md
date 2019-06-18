@@ -35,3 +35,4 @@ I'm most productive if given a shell, my configs are on [dotfiles](http://github
 - 💬[Telegram](https://telegram.org/) - Communication tool of choice. Man you gotta appreciate the speed of the app
 - 🔐[1Password](https://1password.com) - To store all my passwords, OTP, private keys and other secured notes
 - 🗒[iA Writer](https://ia.net/writer) - All my notes are in markdown and put under version control as a [Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
+- 🎩[Alfred](https://www.alfredapp.com/) - From opening apps, to sophisticated workflows, Alfred is the savior
