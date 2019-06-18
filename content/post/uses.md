@@ -22,3 +22,16 @@ The tools that powered my daily life as a software engineer.
 - 🖲[Logitech MX Master 2S](https://www.amazon.com/Logitech-Wireless-Cross-Computer-Control-Windows/dp/B071Z8RZHG) - When I need that ergonomic feeling.
 - 📒[Muji's stationery](https://www.muji.us/store/stationery.html) - I'm a big fan of Muji and its simple design, I carry around a notebook, and some Muji pens.
 - 🚠[Cables](http://www.anker.com) - A bunch of USB-C, lighting cables mostly from Anker.
+
+# Software
+
+_"Where there is a shell, there's a way"_
+
+I'm most productive if given a shell, my configs are on [dotfiles](http://github.com/khoi/dotfiles).
+
+- 🐡[Fish](http://fishshell.com/) - "Out Of The Box" shell that's arguably better than zsh
+- 📝[Neovim](https://neovim.io/) - My text editor of choice that needs no introduction
+- 🐳[Docker](https://docker.io) - When I need to spin up a background services or a Tensorflow instance
+- 💬[Telegram](https://telegram.org/) - Communication tool of choice. Man you gotta appreciate the speed of the app
+- 🔐[1Password](https://1password.com) - To store all my passwords, OTP, private keys and other secured notes
+- 🗒[iA Writer](https://ia.net/writer) - All my notes are in markdown and put under version control as a [Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
