@@ -25,14 +25,28 @@ The tools that powered my daily life as a software engineer.
 
 # Software
 
+- 🀄️[Moom](https://manytricks.com/moom/) - It's like i3wm but for macOS.
+- 🐳[Docker](https://docker.io) - When I need to spin up a background services or a Tensorflow instance
+- 💬[Telegram](https://telegram.org/) - Communication tool of choice. Man you gotta appreciate the speed of the app
+- 🔐[1Password](https://1password.com) - To store all my passwords, OTP, private keys and other secured notes
+- 🗒[iA Writer](https://ia.net/writer) - All my notes are in markdown and put under version control as a [Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
+- 🎩[Alfred](https://www.alfredapp.com/) - From opening apps, to sophisticated workflows, Alfred is the savior
+- 🐛[Xcode](https://developer.apple.com/xcode/) - Swift
+- 📑[Dash](https://kapeli.com/dash) - To quickly look up API documentation using Alfred integration.
+- 🛡[Adguard](https://adguard.com) - System-wide ad-blocker.
+- 🐘[TablePlus](https://tableplus.com) - `SELECT * FROM iwishihaveadb`
+- 👨‍🚀[Proxyman](https://proxyman.app/) - A native HTTP proxy debugging app.
+
+# Shell Setup
+
 _"Where there is a shell, there's a way"_
 
 I'm most productive if given a shell, my configs are on [dotfiles](http://github.com/khoi/dotfiles).
 
 - 🐡[Fish](http://fishshell.com/) - "Out Of The Box" shell that's arguably better than zsh
 - 📝[Neovim](https://neovim.io/) - My text editor of choice that needs no introduction
-- 🐳[Docker](https://docker.io) - When I need to spin up a background services or a Tensorflow instance
-- 💬[Telegram](https://telegram.org/) - Communication tool of choice. Man you gotta appreciate the speed of the app
-- 🔐[1Password](https://1password.com) - To store all my passwords, OTP, private keys and other secured notes
-- 🗒[iA Writer](https://ia.net/writer) - All my notes are in markdown and put under version control as a [Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X)
-- 🎩[Alfred](https://www.alfredapp.com/) - From opening apps, to sophisticated workflows, Alfred is the savior
+- 🔍[fzf](https://github.com/junegunn/fzf) - fuzzy finder for everything
+- 🔌[tmux](https://github.com/tmux/tmux) - screen multiplexer, long running tasks, tile management, you name it.
+- 📖[tldr](https://tldr.sh/) - dead simple man page with examples.
+- 💀[ripgrep](https://github.com/BurntSushi/ripgrep) - a better `ack`
+- 🐙[hub](https://github.com/github/hub) - a `git` wrapper that allows me to interact with Github from the CLI (creating repo, creating PR)
