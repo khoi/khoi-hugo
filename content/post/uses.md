@@ -33,8 +33,8 @@ The tools that powered my daily life as a software engineer.
 - 🎩[Alfred](https://www.alfredapp.com/) - From opening apps, to sophisticated workflows, Alfred is the savior
 - 🐛[Xcode](https://developer.apple.com/xcode/) - Swift
 - 📑[Dash](https://kapeli.com/dash) - To quickly look up API documentation using Alfred integration.
-- 🛡[Adguard](https://adguard.com) - System-wide ad-blocker.
-- 🐘[TablePlus](https://tableplus.com) - `SELECT * FROM iwishihaveadb`
+- 🛡[Adguard](https://adguard.com) - I love ads.
+- 🐘[TablePlus](https://tableplus.com) - `SELECT * FROM chair`
 - 👨‍🚀[Proxyman](https://proxyman.app/) - A native HTTP proxy debugging app.
 
 # Shell Setup
