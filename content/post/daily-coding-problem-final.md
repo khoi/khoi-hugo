@@ -13,4 +13,4 @@ With Go routine, this problem is kinda too ez.
 
 ### Day 11 - Auto complete
 
-I built a simple [Trie](https://en.wikipedia.org/wiki/Trie) for it. This could be improved with a prefix tree, where nodes that don't have any siblings can be combine to its parent.
+I built a simple [Trie](https://en.wikipedia.org/wiki/Trie) for it. This could be improved with a prefix tree, where nodes that don't have any siblings and children can be combine to its parent.
