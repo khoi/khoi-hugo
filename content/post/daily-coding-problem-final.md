@@ -20,3 +20,7 @@ I built a simple [Trie](https://en.wikipedia.org/wiki/Trie) for it. This could b
 ![Pi Estimation](/images/pi_estimation_monte_carlo.JPG)
 
 I failed to "parallelize" the algorithm using Go routine. I might revisit this in the future.
+
+### Day 16 - Order Log with Circular List
+
+Learnt that Go has `container/ring` data structure built in.
