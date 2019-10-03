@@ -20,7 +20,7 @@ draft: false
 
 I've recently acquired the new 15 inch Macbook Pro. Despite the UselessBar, I've been in love with it mainly because it's light and thin and black. And also coming from a mechanical keyboard "background", I actually really like the feely of the new Butterfly keyboard. 
 
-However, this post is not going to be about how I love my new machine, but rather how I set it up for iOS and Golang development. Many people have asked me about my setup, especially on the terminal-thingy they called it. Thus, I'll try  to document everything in this post, and also try to keep it always up-to-date.
+However, this post is not going to be about how I love my new machine, but rather how I set it up for iOS and Golang development. Many people have asked me about my setup, especially on my terminal setup. Thus, I'll try  to document everything in this post, and also try to keep it always up-to-date.
 
 ## Homebrew
 The very first thing I do is to install [Homebrew](https://brew.sh) 
@@ -39,7 +39,7 @@ I've switched from `zsh` to `fish` shell for almost 2 years. And I feel like tha
 
 ```bash
 brew install fish
-sudo echo /usr/local/bin/fish >> /etc/shells
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 fisher 
 ```
@@ -53,15 +53,14 @@ I use the bare repo Git technique to manage my dotfiles. The method is described
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 echo ".cfg" >> .gitignore
-git clone --bare git@github.com:khoi/dotfiles.git $HOME/.cfg  
+git clone --bare https://github.com/khoi/dotfiles.git $HOME/.cfg  
 config checkout
 ```
 
 ## Some `macOS` tweak
 
-- Run [.macos](https://github.com/khoi/dotfiles/blob/master/.macos) includes some tweak that I feel is necessary for a macOS. It's fully documented so feel free to dissect it.
+- Run [.macos](https://github.com/khoi/dotfiles/blob/master/.macos) includes some sane settings for macOS
 - Remap `caps lock` to `Control` 
--  > System Preferences > Keyboard. Set `Key Repeat` to fastest, and `Delay Until Repeat` to shortest value.
 
 ## Install brew's packages 🍺
 
@@ -72,7 +71,6 @@ brew install tldr
 brew install youtube-dl
 brew install neovim
 brew install git 
-brew install diff-so-fancy
 brew install openssl
 brew install reattach-to-user-namespace # Use for tmux
 brew install ripgrep
@@ -83,31 +81,20 @@ brew install go
 brew install jq
 brew install node
 brew install khoi/tap/compass
-brew install fzf && /usr/local/opt/fzf/install
 brew install htop
-```
+brew install ffmpeg
+brew install fzf && /usr/local/opt/fzf/install
 
-I won't go in to detail on how I use my shell with `tmux` and `pt` since I think that's going to be lengthy and deserve its own blog post. 
-
-## Install ruby using rbenv
-
-```bash
-#rbenv
-brew install rbenv
-rbenv init
-rbenv install 2.5.1
-rbenv global 2.5.1
 ```
 
 ## Install AppStore application with `mas`
 
 ```bash
-mas lucky xcode
 mas lucky 1Password
-mas lucky spark
 mas lucky moom
 mas lucky telegram
-mas lucky todoist
+mas lucky “The Unarchiver”
+mas lucky xcode
 ```
 
 ## Install applications using `brew cask`
@@ -116,22 +103,34 @@ The ability to installing, maintaining, and removing apps using `brew cask` make
 
 ```bash
 brew cask install visual-studio-code
-brew cask install gpg-suite
+brew cask install gpg-suite-no-mail
 brew cask install google-chrome
 brew cask install dash
-Brew cask install google-backup-and-sync
 brew cask install alfred
-brew cask install charles # debug http requests never been easier
-brew cask install adguard # Kernel level ad blocker
-brew cask install jetbrains-toolbox # For Goland
+brew cask install charles 
+brew cask install adguard 
+brew cask install jetbrains-toolbox 
 brew cask install docker
-brew cask install simsim
-brew cask install slack
-brew cask install skype
 brew cask install private-internet-access
 brew cask install caskroom/fonts/font-hack 
-brew cask install font-fira-code # My main coding font with ligatures
+brew cask install font-fira-code 
 brew cask install vlc
+brew cask install 1password-cli
+```
+
+## Restore private keys
+
+I stored my private keys, environment variables in 1Password. 
+
+```bash
+set -x OP_SESSION_my (op signin https://my.1password.com khoiracle@gmail.com --output=raw)
+op get document id_rsa > ~/.ssh/id_rsa
+op get document id_rsa.pub > ~/.ssh/id_rsa.pub
+chmod 0600 ~/.ssh/id_rsa
+
+op get document GPG > 1.asc
+gpg --import 1.asc
+rm 1.asc
 ```
 
 ## Miscs
