@@ -83,8 +83,8 @@ brew install node
 brew install khoi/tap/compass
 brew install htop
 brew install ffmpeg
+brew install m-cli
 brew install fzf && /usr/local/opt/fzf/install
-
 ```
 
 ## Install AppStore application with `mas`
