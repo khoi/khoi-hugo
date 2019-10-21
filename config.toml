@@ -14,3 +14,4 @@ DefaultContentLanguage = "en"
 
 [params]
   description = "khoi's random thoughts"
+  mainSections = ["post"]

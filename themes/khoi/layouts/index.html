@@ -21,7 +21,7 @@
     </ul>
     <h2>Posts</h2>
     <ul>
-    {{ range (where .Pages "Section" "post")}}
+    {{ range where (site.RegularPages) "Type" "in" site.Params.mainSections }}
     <li>
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </li>
