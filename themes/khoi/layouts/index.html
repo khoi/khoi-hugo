@@ -19,14 +19,16 @@
             <a href="/index.xml">RSS</a>
         </li>
     </ul>
-    <h2>Posts</h2>
-    <ul>
-    {{ range where (site.RegularPages) "Type" "in" site.Params.mainSections }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-    </li>
+    {{ range .Site.Sections }}
+        <h2>{{ .Name }} </h2>
+        <ul>
+            {{ range where (site.RegularPages) "Section" "==" .Section }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            </li>
+            {{ end }}
+        </ul>
     {{ end }}
-    </ul>
     <h2>Projects</h2>
     <ul>
       <li>🌈<a href="https://imgur.com/a/VQxl1ol">Sorting Algorithms Visualization</a></li>
