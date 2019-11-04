@@ -1,7 +1,7 @@
 +++
 title = "SSH (mosh) to Raspberry Pi using iPad Pro over USB-C"
 date = "2019-11-02T18:07:37+07:00"
-draft = true
+draft = false
 categories = []
 +++
 
