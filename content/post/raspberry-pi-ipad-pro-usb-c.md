@@ -30,9 +30,9 @@ echo 'dtoverlay=dwc2' >> /Volumes/boot/config.txt
 
 ## Connect Pi to the iPad
 
-Now you can connect the Pi to your iPad Pro using USB-C to micro USB cable, or using a dongle. The Pi draws power and connect to the iPad using a single cable 💯.
+Now you can connect the Pi to your iPad Pro using USB-C to micro USB cable, or using a dongle. The Pi draws power and connects to the iPad using a single cable 💯.
 
-The first boot is going to take couple minutes since the Pi needs to expand its file system. After that you should be able to SSH to the Pi under `raspberrypi.local`
+The first boot is going to take a couple minutes since the Pi needs to expand its file system. After that, you should be able to SSH to the Pi under `raspberrypi.local`
 
 If you don't know what SSH client to use on iOS, I highly recommend [Blink](https://www.blink.sh/).
 
@@ -42,4 +42,4 @@ Voila! Now that you have a shell, you can do anything :).
 
 ## Setup mosh and tmux 
 
-Now that we've got SSH up and running, it's always a good idea to add `mosh` and `tmux` to the stack. I won't go into details on how to set them up since there are plenty of good resources on the Internet for it. But the ability to connect the iPad to a Pi and resume your work session feels absolutely magical 🧙‍♂️.
+Now that we've got SSH up and running, it's always a good idea to add `mosh` and `tmux` to the stack. I won't go into details on how to set them up since there are plenty of good resources on the Internet for it. But the ability to connect the iPad to a Pi and resume your work session feels magical 🧙‍♂️.
