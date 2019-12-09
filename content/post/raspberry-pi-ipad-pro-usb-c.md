@@ -14,8 +14,11 @@ I love my 11” iPad Pro. IMO, it's the best device Apple's ever made. With its 
 ```bash
 diskutil list # make note of where the SD card is mounted
 
-# replace rdiskN with the appropriate value
-sudo dd bs=1m if=2019-09-26-raspbian-buster-lite.img of=/dev/rdiskN conv=sync
+# unmount the disk
+diskutil unmountDisk /dev/rdisk4
+
+# replace rdisk4 with the appropriate value
+sudo dd bs=1m if=2019-09-26-raspbian-buster-lite.img of=/dev/rdisk4 conv=sync
 ```
 - Enable SSH 
 ```bash
