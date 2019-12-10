@@ -1,7 +1,7 @@
 +++
 title = "📚 Reading List"
 date = "2019-10-21T14:35:38+07:00"
-draft = false
+draft = true
 categories = []
 +++
 
