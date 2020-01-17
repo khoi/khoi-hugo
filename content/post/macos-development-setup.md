@@ -113,6 +113,7 @@ brew cask install jetbrains-toolbox
 brew cask install docker
 brew cask install private-internet-access
 brew cask install caskroom/fonts/font-hack 
+brew cask install font-jetbrains-mono
 brew cask install font-fira-code 
 brew cask install vlc
 brew cask install 1password-cli
