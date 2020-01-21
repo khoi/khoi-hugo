@@ -1,4 +1,4 @@
-<video width="{{ if .Get "width" }}{{ .Get "width" }}{{ else }}320{{ end }}" height="{{ if .Get "height" }}{{ .Get "height" }}{{ else }}240{{ end }}" autoplay="autoplay" preload="auto" loop>
+<video style="background-color: black;" width="{{ if .Get "width" }}{{ .Get "width" }}{{ else }}320{{ end }}" height="{{ if .Get "height" }}{{ .Get "height" }}{{ else }}240{{ end }}" autoplay="autoplay" preload="auto" loop>
   {{ with .Get "mp4" }}
   <source src="{{ . }}" type="video/mp4" />
   {{ end }} Your browser does not support the video tag.
