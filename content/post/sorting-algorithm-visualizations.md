@@ -29,6 +29,8 @@ Here is how they are animated: each row contains the same set of values (colors)
 - [Radix Sort - LSD](#radix-sort---lsd)
 - [Comb Sort](#comb-sort)
 
+**Note: It takes a while to load the videos, be patient please.**
+
 ## Insertion Sort
 
 {{<video_loop height="100%" width="100%" mp4="/videos/insertion_sort.mp4" autoplay="autoplay">}}
