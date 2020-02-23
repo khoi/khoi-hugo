@@ -102,7 +102,6 @@ mas lucky xcode
 The ability to installing, maintaining, and removing apps using `brew cask` makes I feel like a super hero. This is my preferred way of installing software. 
 
 ```bash
-brew cask install visual-studio-code
 brew cask install gpg-suite-no-mail
 brew cask install google-chrome
 brew cask install dash
@@ -111,12 +110,11 @@ brew cask install charles
 brew cask install adguard 
 brew cask install jetbrains-toolbox 
 brew cask install docker
-brew cask install private-internet-access
-brew cask install caskroom/fonts/font-hack 
 brew cask install font-jetbrains-mono
-brew cask install font-fira-code 
 brew cask install vlc
 brew cask install 1password-cli
+brew cask install wireguard
+brew cask install sf-symbols
 ```
 
 ## Restore private keys
