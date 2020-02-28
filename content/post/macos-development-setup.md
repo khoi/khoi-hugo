@@ -122,7 +122,7 @@ brew cask install sf-symbols
 I stored my private keys, environment variables in 1Password. 
 
 ```bash
-set -x OP_SESSION_my (op signin https://my.1password.com khoiracle@gmail.com --output=raw)
+export OP_SESSION_my=$(op signin https://my.1password.com khoiracle@gmail.com --output=raw)
 op get document id_rsa > ~/.ssh/id_rsa
 op get document id_rsa.pub > ~/.ssh/id_rsa.pub
 chmod 0600 ~/.ssh/id_rsa
