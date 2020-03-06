@@ -7,7 +7,7 @@ categories = []
 
 # Bookshelf
 
-My digital bookshelf, the books are listed in no particular order.
+My digital bookshelf, the books are listed in chronological order.
 
 ## Feb 2020
 
