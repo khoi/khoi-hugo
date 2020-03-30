@@ -85,6 +85,7 @@ brew install htop
 brew install ffmpeg
 brew install m-cli
 brew install fzf && /usr/local/opt/fzf/install
+brew install asdf
 ```
 
 ## Install AppStore application with `mas`
