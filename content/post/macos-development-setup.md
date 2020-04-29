@@ -4,63 +4,62 @@ date: 2018-07-15T13:46:34+07:00
 draft: false
 ---
 
-- [Introduction](#introduction)
-- [Homebrew](#homebrew)
-- [fish shell 🐡](#fish-shell-🐡)
-- [dotfiles](#restoring-the-dotfiles)
-- [Some `macOS` tweak](#some-macos-tweak)
-- [Homebrew packages 🍺](#install-brews-packages-🍺)
-- [ruby](#install-ruby-using-rbenv)
-- [GUI Applications](#install-applications-using-brew-cask)
-- [Xcode](#xcode)
-- [Miscs](#miscs)
-- [Conclusion](#conclusion)
+[TOC]
 
 ## Introduction
 
-I've recently acquired the new 15 inch Macbook Pro. Despite the UselessBar, I've been in love with it mainly because it's light and thin and black. And also coming from a mechanical keyboard "background", I actually really like the feely of the new Butterfly keyboard. 
+The stuff that I do when I setup a new macOS. Mostly for personal references.
 
-However, this post is not going to be about how I love my new machine, but rather how I set it up for iOS and Golang development. Many people have asked me about my setup, especially on my terminal setup. Thus, I'll try  to document everything in this post, and also try to keep it always up-to-date.
+## Git
 
-## Homebrew
-The very first thing I do is to install [Homebrew](https://brew.sh) 
-
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-## Fish shell 🐡
-
-My setup is going to be heavily relies on the shell, so let's get Terminal ready.
-
-I've switched from `zsh` to `fish` shell for almost 2 years. And I feel like that `fish` although not as powerful as `zsh`, but it provides me with enough functionalities out of the box, and it requires very minimal configurations. 
-
-### Installing fish
+Get git
 
 ```bash
-brew install fish
-echo /usr/local/bin/fish | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/fish
-fisher 
+xcode-select --install
 ```
 
 ## Restoring the dotfiles
 
-Now that I have `fish` in order, time to restore my beloved [dotfiles](https://github.com/khoi/dotfiles). My dotfiles mostly contains my [Neovim](https://neovim.io), Tmux, some Fish's custom functions.
+Time to restore my beloved [dotfiles](https://github.com/khoi/dotfiles). My dotfiles mostly contains my zsh, [Neovim](https://neovim.io), Tmux, some other customizations.
 
 I use the bare repo Git technique to manage my dotfiles. The method is described in detail on Atlassian's [blog](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
 echo ".cfg" >> .gitignore
-git clone --bare https://github.com/khoi/dotfiles.git $HOME/.cfg  
+git clone --bare https://github.com/khoi/dotfiles.git $HOME/.cfg
 config checkout
 ```
 
-## Some `macOS` tweak
+## `macOS` tweaks
 
-- Run [.macos](https://github.com/khoi/dotfiles/blob/master/.macos) includes some sane settings for macOS
-- Remap `caps lock` to `Control` 
+- Remap `caps lock` to `Control`
+- Run [.macos](https://github.com/khoi/dotfiles/blob/master/.macos)
+
+## `nix`
+
+I recently moved from Homebrew to [nix](https://nixos.org/nix/) to manage my dependencies.
+
+```bash
+curl -L https://nixos.org/nix/install | sh
+```
+
+The packages are defined in [~/.config/nixpkgs/config.nix](~/.config/nixpkgs/config.nix).
+
+To install
+
+```bash
+nix-env -iA nixpkgs.myPackages
+```
+
+## Homebrew
+
+The very first thing I do is to install [Homebrew](https://brew.sh)
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 ## Install brew's packages 🍺
 
@@ -70,12 +69,12 @@ brew install mas
 brew install tldr
 brew install youtube-dl
 brew install neovim
-brew install git 
+brew install git
 brew install openssl
 brew install reattach-to-user-namespace # Use for tmux
 brew install ripgrep
 brew install tmux
-brew install hub 
+brew install hub
 brew install fd
 brew install go
 brew install jq
@@ -88,6 +87,7 @@ brew install fzf && /usr/local/opt/fzf/install
 brew install git-extras
 brew install bat
 brew install diff-so-fancy
+brew install starship
 ```
 
 ## Install AppStore application with `mas`
@@ -102,16 +102,16 @@ mas lucky xcode
 
 ## Install applications using `brew cask`
 
-The ability to installing, maintaining, and removing apps using `brew cask` makes I feel like a super hero. This is my preferred way of installing software. 
+The ability to installing, maintaining, and removing apps using `brew cask` makes I feel like a super hero. This is my preferred way of installing software.
 
 ```bash
 brew cask install gpg-suite-no-mail
 brew cask install google-chrome
 brew cask install dash
 brew cask install alfred
-brew cask install charles 
-brew cask install adguard 
-brew cask install jetbrains-toolbox 
+brew cask install charles
+brew cask install adguard
+brew cask install jetbrains-toolbox
 brew cask install docker
 brew cask install font-jetbrains-mono
 brew cask install vlc
@@ -122,23 +122,22 @@ brew cask install sf-symbols
 
 ## Restore private keys
 
-I stored my private keys, environment variables in 1Password. 
+I stored my private keys, environment variables in 1Password.
 
 ```bash
 export OP_SESSION_my=$(op signin https://my.1password.com khoiracle@gmail.com --output=raw)
+mkdir ~/.ssh
 op get document id_rsa > ~/.ssh/id_rsa
 op get document id_rsa.pub > ~/.ssh/id_rsa.pub
 chmod 0600 ~/.ssh/id_rsa
 
-op get document GPG > 1.asc
-gpg --import 1.asc
-rm 1.asc
+op get document GPG > /tmp/1.asc
+gpg --import /tmp/1.asc; rm /tmp/1.asc
 ```
 
 ## Miscs
 
 - I use [Dracula](http://draculatheme.com) as the color scheme for most of my editor.
-
 
 ## Conclusion
 
