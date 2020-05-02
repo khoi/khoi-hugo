@@ -50,7 +50,7 @@ The packages are defined in [~/.config/nixpkgs/config.nix](~/.config/nixpkgs/con
 To install
 
 ```bash
-nix-env -i all
+nix-env -iA nixpkgs.myPackages --verbose
 ```
 
 ## Homebrew
