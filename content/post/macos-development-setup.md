@@ -42,7 +42,7 @@ config checkout
 I recently moved from Homebrew to [nix](https://nixos.org/nix/) to manage my dependencies.
 
 ```bash
-curl -L https://nixos.org/nix/install | sh
+sh <(curl https://nixos.org/nix/install) --daemon
 ```
 
 The packages are defined in [~/.config/nixpkgs/config.nix](~/.config/nixpkgs/config.nix).
