@@ -22,15 +22,7 @@ xcode-select --install
 
 Time to restore my beloved [dotfiles](https://github.com/khoi/dotfiles). My dotfiles mostly contains my zsh, [Neovim](https://neovim.io), Tmux, some other customizations.
 
-I use the bare repo Git technique to manage my dotfiles. The method is described in detail on Atlassian's [blog](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
-
-```bash
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-config config --local status.showUntrackedFiles no
-echo ".cfg" >> .gitignore
-git clone --bare https://github.com/khoi/dotfiles.git $HOME/.cfg
-config checkout
-```
+I use GNU Stow to manage my dotfiles, instruction is on the Github repo.
 
 ## `macOS` tweaks
 
@@ -70,11 +62,7 @@ curl https://raw.githubusercontent.com/khoi/dotfiles/master/darwin/casks | xargs
 ## Install AppStore application with `mas`
 
 ```bash
-mas lucky 1Password
-mas lucky moom
-mas lucky telegram
-mas lucky “The Unarchiver”
-mas lucky xcode
+curl https://raw.githubusercontent.com/khoi/dotfiles/master/darwin/mas | xargs mas lucky
 ```
 
 ## Restore private keys
