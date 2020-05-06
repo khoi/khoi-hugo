@@ -34,7 +34,7 @@ I use GNU Stow to manage my dotfiles, instruction is on the Github repo.
 I recently moved from Homebrew to [nix](https://nixos.org/nix/) to manage my dependencies.
 
 ```bash
-sh <(curl https://nixos.org/nix/install) --daemon
+sh <(curl https://nixos.org/nix/install) 
 ```
 
 The packages are defined in [~/.config/nixpkgs/config.nix](~/.config/nixpkgs/config.nix).
